@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fontello.css">
+   
+    
+   
+    <link rel="stylesheet" href="css/estilosformulario.css">
+    <!--<link rel="stylesheet" href="css/estilosnuevos.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> <!--FUENTE DE UBUNTU-->
+    <link rel="icon" type="img/png" href="img/ico.png"> <!--icono que se muestra en la pestaña del navegador.-->
+    <!-- la libreria de JAVASCRIPT TIENE QUE IR CON LINK-->
+    <!--siempre debajo de todas las hojas de estilos-->
+   <!-- <script src="js/jquery-3.3.1.min.js"></script--> 
+   <!--termina siempre en .js-->
+   
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script> 
+    <script src="js/desplegable.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/formulario.js"></script>
+    
+    
+    <title>GRADO DAM</title>
+     
+</head>
+<body>
+   
+    <div id="modal">
+        <div id="superior">
+            <button  onclick="cerrar()">&nbsp;Cerrar</button>
+        </div>
+        <div id="mensaje">
+            <p id="pmensaje">TEXTO DE EJEMPLO</p>
+        </div>
+    </div>
+    
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="icon-menu"></label>
+       
+        <nav class="menu">
+            <ul>                                   
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacta.html">Contacta</a></li>
+                <li class="submenu"><a href="galerias.html">Galerias<span class="icon-down-open"></span></a>
+                    <ul>
+                        <li><a href="galerias.html#imagenes">Imagenes</a></li>
+                        <li><a href="galerias.html#videos">Videos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  
+    <section id="titulo">
+    
+      <h1>GRADO SUPERIOR</h1>
+      <h4>Desarrollo de aplicaciones multiplataforma</h4>
+      <a href="http://www.todofp.es/en/que-como-y-donde-estudiar/que-estudiar/familia/loe/informatica-comunicaciones/des-aplicaciones-multiplataforma.html" class="enlaces" target="_blank">
+          Más información</a>
+      <div class="texto">
+      <p>¿Te gustaría desarrollar aplicaciones de escritorio,web y móvil?
+      </p>
+       </div>
+      <div class="textodos">
+          <p>El grado superior de desarrollo de aplicaciones multiplataforma te permite formarte como desarrollador web,móvil y escritorio</p>
+      </div>
+      
+  </section>
+  
+    <section class="formulario">
+        
+      <form action="" method="post" class="form-registro" > 
+        <h2 class="form-titulo">Contacta con nosotros</h2>
+        <div class="contenedor-inputs">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-100" onblur="revisar(this)" autocomplete="off"> <!-- desactiva el autocompletado del codigo--> <!-- onblur -> cuando quito el raton del cuadro texto-->
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input-100" onblur="revisar(this)" autocomplete="off">
+            <input type="date" id="fecha" name = "fecha" placeholder="Fecha de Nacimiento" class="input-100" onblur="revisar(this)" autocomplete="off">
+            <input type="text" id="dni" name="DNI" placeholder="DNI" class="input-100" onblur="revisar(this)" autocomplete="off">
+            <input type="text" id="direccion" name="direccion" placeholder="Dirección" class="input-100" onblur="revisar(this)" autocomplete="off">     
+            <input type="text" id="correo" name="correo" placeholder="Correo" class="input-100" onblur="revisar(this)" autocomplete="off">
+            <input type="text" id="usuario" name="usuario" placeholder="usuario" class="input-100" onblur="revisar(this)" autocomplete="off">
+            <input type="password" id="clave" name="clave" placeholder="Clave" class="input-100" onblur="revisar(this)" autocomplete="off">
+            <input type="phone" id="telefono" name="telefono" placeholder="telefono" class="input-100" onblur="revisar(this)" autocomplete="off">
+            <input type="file" id="curriculum" name="curriculum" placeholder="curriculum" class="input-100" onblur="revisar(this)" autocomplete="off">
+            <textarea id="textarea" cols="30" placeholder="Tu Mensaje" rows="10"></textarea>
+            <input class="btn-enviar" type="button" value="Enviar Mensaje" onclick="validar()">
+        </div> 
+    </form>
+    </section>
+
+<footer>
+      <div class="divcont">
+          <p>Copyright &copy; Jorge Gamero Capellán <br/><br/>2019.<br/><br/>Proyecto final</p>                 
+      </div>    
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+PROYECTO FINAL LLMM:
+pagina de presentacion del grado de DAM
+========================================
+ index.html
+	contenidos:
+	Index:
+		presentacion de grado superior
+		tabla con asignaturas
+		
+	Galerias:
+		video p1: https://www.youtube.com/watch?v=Y_9SwDFd_9Y
+		sliders: 
+		
